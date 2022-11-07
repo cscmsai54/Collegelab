@@ -11,5 +11,5 @@ for i in range(3):
     vectorlist2.append(j)
 vector1 = np.array(vectorlist1)
 vector2 = np.array(vectorlist2)
-multi = vector1 * vector2 
-print(vector1 , " * " , vector2 , " = " , multi)
+dot = np.dot(vector1,vector2)
+print(vector1 , " . " , vector2 , " = " , dot)
