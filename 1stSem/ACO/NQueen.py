@@ -4,6 +4,7 @@ def printSolution(board, N):
         for j in range(N):
             print(board[i][j], end =" ")
         print()
+        
 def isSafe (board, row, col, N):
     i=row 
     j = col
@@ -26,6 +27,7 @@ def isSafe (board, row, col, N):
             return False
         i=i-1
     return True
+
 def solutionExists(board, N, row):
     if (row >= N):
         return True
@@ -36,6 +38,7 @@ def solutionExists(board, N, row):
                 return True
             board[row][col] = '.'
     return False
+
 def solveNQueenProblem(N):
     board = []
     for i in range(N):
@@ -48,5 +51,6 @@ def solveNQueenProblem(N):
     else:
         print("One of the possible solution for N =", N, "is -")
         printSolution(board, N)
+        
 N = int(input("Enter The Size of The Board : \n>>"))
 solveNQueenProblem(N)

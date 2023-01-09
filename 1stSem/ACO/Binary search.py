@@ -5,7 +5,9 @@ for i in range(limit):
     array.append(a)
 print (array)
 print("\nsorted array\n")
+
 array.sort()
+
 print(array)
 val = int(input("Enter The Value To be Searched :\n>> "))
 first = 0
