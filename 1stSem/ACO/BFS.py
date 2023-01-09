@@ -8,10 +8,10 @@ graph = {
   }
 visited = []
 queue = []  
-def bfs(visited, graph, node): #function for BFS
+def bfs(visited, graph, node): 
   visited.append(node)
   queue.append(node)
-  while queue:          # Creating loop to visit each node
+  while queue:          
     element = queue.pop(0) 
     print (element, end = ",") 
     for next in graph[element]:
@@ -19,4 +19,4 @@ def bfs(visited, graph, node): #function for BFS
         visited.append(next)
         queue.append(next)
 print("Following is the Breadth-First Search")
-bfs(visited, graph, '5')    # function calling
+bfs(visited, graph, '5')    

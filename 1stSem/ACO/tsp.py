@@ -1,7 +1,5 @@
 from itertools import permutations
-
 #functions 
-
 def shortest(snode, adj):
     subnodes = []
     path = []
@@ -22,8 +20,6 @@ def shortest(snode, adj):
             min_path_cost = current_path_cost
             path = permutation
     return min_path_cost, path
-    
-  
 def accept_distance():
     adj_matrix = []
     print("\n\nEnter The Number Of Nodes/Cities :")
@@ -41,13 +37,10 @@ def accept_distance():
                 row.append(v)
         adj_matrix.append(row)
     for i in range(0,nodes):
-        
         print(adj_matrix[i])
     print("\n")
     return adj_matrix
-
 #Main block          
-
 adj_matrix = accept_distance()
 print("Enter The Starting Node : ")
 start1 = int(input(">>")) 

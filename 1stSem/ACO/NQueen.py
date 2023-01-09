@@ -5,23 +5,26 @@ def printSolution(board, N):
             print(board[i][j], end =" ")
         print()
 def isSafe (board, row, col, N):
-    i, j = row, col
+    i=row 
+    j = col
     while (i > -1 and j > -1):
         if (board[i][j] == 'Q'):
             return False
-        i -= 1
-        j -= 1
-    i, j = row, col
+        i=i-1
+        j=j-1
+    i=row 
+    j = col
     while (i > -1 and j < N):
         if (board[i][j] == 'Q'):
             return False
-        i -= 1
-        j += 1
-    i, j = row, col
+        i=i-1
+        j =j+1
+    i=row 
+    j = col
     while (i > -1):
         if (board[i][j] == 'Q'):
             return False
-        i -= 1
+        i=i-1
     return True
 def solutionExists(board, N, row):
     if (row >= N):
