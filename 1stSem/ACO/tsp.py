@@ -33,6 +33,10 @@ def accept_distance():
             if i == j :
                 v = 0
                 row.append(v)
+            #elif i>j :
+                #print(adj_matrix[j][i])
+                #v=(adj_matrix[])
+                #continue
             else :
                 print(f"Enter Distance Frome Nodes {i+1} to {j+1}")
                 v = int(input(">>"))
